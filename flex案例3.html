@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图文混排</title>
+    <style>
+        .demo {
+            width: 300px;
+            padding: 10px;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: flex-start;
+            color: #fff;
+            border: 1px solid red;
+        }
+
+        .demo .img {
+            margin-right: 10px;
+        }
+
+        .demo .item {
+            width: 190px;
+            background: gray;
+        }
+    </style>
+</head>
+<body>
+<div class="demo">
+    <img class="img" width="100" height="80" src="imgs/1.jpg"/>
+    <div class="item">
+        文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字...
+        <a href="#">详细</a>
+    </div>
+</div>
+</body>
+</html>
