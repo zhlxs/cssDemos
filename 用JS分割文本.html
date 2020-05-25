@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JS分割文本</title>
+	</head>
+	<link rel="stylesheet" href="./css/JSScript.css" charset="utf-8" />
+	<body>
+		<p class="landIn">Ano hi watashitachi mada shiranai no Fushigi no monogatari desu.</p>
+		<script type="text/javascript">
+			let landInTexts = document.querySelectorAll(".landIn");
+			landInTexts.forEach(landInText => {
+			  let letters = landInText.textContent.split("");
+			  landInText.textContent = "";
+			  letters.forEach((letter, i) => {
+			    let span = document.createElement("span");
+			    span.textContent = letter;
+			    span.style.animationDelay = `${i * 0.05}s`;
+			    landInText.append(span);
+			  });
+			});
+		</script>
+	</body>
+</html>
